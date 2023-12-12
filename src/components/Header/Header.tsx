@@ -12,7 +12,7 @@ export default function Header() {
       </Link>
       <NavBar />
       <div className="">
-        <Link href="/" className="">
+        <Link href="https://github.com/TechStarHub/bio-drop" className="">
           <BsGithub className="text-2xl" />
         </Link>
       </div>

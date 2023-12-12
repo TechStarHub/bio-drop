@@ -1,9 +1,11 @@
 import Link from "next/link";
+import CopyBtn from "./CopyBtn";
 
 type PeopleLinkProps = {
   label: string;
   url: string;
   type: string;
+  key: number;
 };
 
 async function IconImporter(type: string) {
@@ -29,15 +31,19 @@ export default async function PeopleLink({
   label,
   url,
   type,
+  key,
 }: PeopleLinkProps) {
   const Icon = await IconImporter(type);
   return (
-    <Link
-      href={url}
-      className="w-full flex items-center gap-4 px-4 py-2 rounded-full bg-slate-200 hover:border-2 hover:border-sky-600 transition-all duration-400"
-    >
-      <Icon className="text-xl" />
-      <h1 className="text-sm font-medium">{label}</h1>
-    </Link>
+    <div className="w-full flex justify-between items-center gap-4 px-4 py-2 rounded-full bg-slate-200 hover:border hover:border-sky-600 transition-all duration-400">
+      <span className="flex items-center gap-4">
+        <Icon className="text-xl" />
+        <Link key={key} href={url} className="hover:text-sky-600">
+          <h1 className="text-sm font-medium">{label}</h1>
+        </Link>
+      </span>
+
+      <CopyBtn toBeCopied={url} />
+    </div>
   );
 }

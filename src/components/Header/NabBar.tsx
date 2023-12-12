@@ -9,8 +9,8 @@ export default function NavBar() {
       <Link href="/people">
         <span className="text-sm font-medium">People</span>
       </Link>
-      <Link href="/about">
-        <span className="text-sm font-medium">About</span>
+      <Link href="/docs/quick-start">
+        <span className="text-sm font-medium">Docs</span>
       </Link>
     </nav>
   );

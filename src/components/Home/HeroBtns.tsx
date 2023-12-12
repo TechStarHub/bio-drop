@@ -8,7 +8,7 @@ export default function HeroBtns() {
   return (
     <div className="flex justify-center items-center mt-6">
       <button
-        onClick={() => router.push("/")}
+        onClick={() => router.push("/docs/quick-start")}
         className="flex justify-center items-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-full"
       >
         <span className="mr-2">Get Started</span>

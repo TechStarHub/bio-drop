@@ -8,12 +8,13 @@ type PeopleCardProps = {
   profilePic: string;
   location: string;
   tags: string[];
+  key: string;
 };
 
 export default function PeopleCard({ people }: { people: PeopleCardProps }) {
-  const { name, username, headline, profilePic, location, tags } = people;
+  const { name, username, headline, profilePic, location, tags, key } = people;
   return (
-    <Link href={`/people/${username}`}>
+    <Link key={key} href={`/people/${username}`}>
       <div className="w-full flex justify-between p-3 rounded border shadow h-full">
         <div className="w-full ">
           <h1 className="text-2xl font-bold">{name}</h1>
@@ -23,8 +24,11 @@ export default function PeopleCard({ people }: { people: PeopleCardProps }) {
             {location}
           </p>
           <p className="flex flex-wrap gap-2 mt-2">
-            {tags.slice(0, 7).map((tag) => (
-              <span className="bg-sky-200 cursor-pointer text-sm text-sky-600 rounded-full px-2 hover:border-sky-600">
+            {tags.slice(0, 7).map((tag: string, idx: number) => (
+              <span
+                key={idx}
+                className="bg-sky-200 cursor-pointer text-sm text-sky-600 rounded-full px-2 hover:border-sky-600"
+              >
                 {tag}
               </span>
             ))}
