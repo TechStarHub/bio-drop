@@ -92,6 +92,7 @@ export default function PageContent() {
             </p>
             <Image
               src={forkImage}
+              placeholder="blur"
               className="rounded mt-2"
               alt="fork the repo"
             />

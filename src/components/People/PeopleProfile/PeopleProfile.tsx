@@ -43,9 +43,9 @@ export default function PeopleProfile({ userData }: { userData: any }) {
       </div>
       <div className="w-full mt-2 mb-8">
         <h1 className="text-xl font-bold text-center">Links({links.length})</h1>
-        <ul className="mt-2 flex flex-col gap-3">
+        <ul className="mt-2 flex flex-col items-center gap-3">
           {links.map((link: any, idx: number) => (
-            <li key={idx} className="">
+            <li key={idx} className="w-full sm:w-fit">
               <PeopleLink
                 key={link.id}
                 label={link.label}

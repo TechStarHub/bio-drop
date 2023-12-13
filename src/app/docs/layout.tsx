@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BioDrop",
+  title: "Docs | BioDrop",
   description: "A simplae app for sharing your bio links",
 };
 

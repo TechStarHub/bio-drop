@@ -8,7 +8,7 @@ export default async function PeoplePage({
 }) {
   const user = params.user;
   const userData = await getUserData(user);
-  console.log(userData);
+  // console.log(userData);
   return (
     <section className="container mx-auto px-4 ">
       <PeopleProfile userData={userData} />

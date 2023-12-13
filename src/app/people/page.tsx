@@ -16,9 +16,10 @@ export const metadata = {
 export default async function People() {
   const people = peopleJson;
   return (
-    <section className="container mx-auto px-4 min-h-screen">
+    <section className="container xl:px-20 2xl:px-20 mx-auto px-4 min-h-screen">
       <SearchPeople />
-      <div className="w-full grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-rows mt-4">
+      <p className="mt-2 text-lg font-medium">People ({people.length})</p>
+      <div className="w-full grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-rows mt-2">
         {people.map((person: any) => (
           <PeopleCard key={person.id} people={person} />
         ))}

@@ -5,7 +5,7 @@ export default function SearchPeople() {
   const [search, setSearch] = useState([]);
 
   return (
-    <div className="">
+    <div className="mt-4">
       <h1 className="text-xl md:text-3xl font-bold">People</h1>
       <form action="" className="mt-4">
         <input
