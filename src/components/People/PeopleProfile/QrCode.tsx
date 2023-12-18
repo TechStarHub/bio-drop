@@ -4,6 +4,7 @@ import { useRef, useEffect } from "react";
 import { BsQrCodeScan } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa6";
 import QRCode from "qrcode";
+import QrCopyBtn from "./QrCopyBtn";
 
 type QrCodeProps = {
   image: string;
@@ -75,7 +76,7 @@ export default function QrCode({ image }: QrCodeProps) {
           <p className="text-sm text-center">
             Scan this QR code to share your profile
           </p>
-          <span className="flex justify-center mt-2">
+          <span className="flex flex-col gap-2 justify-center mt-2">
             <button
               onClick={handleDownload}
               className="text-sm bg-sky-400 rounded px-3 py-1 text-white font-medium outline outline-sky-500 hover:shadow-md  "
@@ -83,6 +84,8 @@ export default function QrCode({ image }: QrCodeProps) {
               Download
               <FaDownload className="inline-block ml-2 text-md " />
             </button>
+
+            <QrCopyBtn toBeCopied={url} />
           </span>
         </div>
       </dialog>
