@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 import { BsQrCodeScan } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa6";
 import QRCode from "qrcode";
-import QrCopyBtn from "./QrCopyBtn";
+import CopyBtn from "./CopyBtn";
 
 type QrCodeProps = {
   image: string;
@@ -85,7 +85,7 @@ export default function QrCode({ image }: QrCodeProps) {
               <FaDownload className="inline-block ml-2 text-md " />
             </button>
 
-            <QrCopyBtn toBeCopied={url} />
+            <CopyBtn label="Copy to clipboard" toBeCopied={url} />
           </span>
         </div>
       </dialog>
