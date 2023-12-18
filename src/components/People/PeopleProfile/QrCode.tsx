@@ -1,12 +1,13 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useMemo } from "react";
 import { BsQrCodeScan } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa6";
 import QRCode from "qrcode";
 import domtoimage from "dom-to-image";
 import CopyBtn from "./CopyBtn";
 import Loader from "@/components/Loader/Loader";
+import { pathToUsername } from "@/utils";
 
 type QrCodeProps = {
   image: string;
@@ -21,6 +22,8 @@ export default function QrCode({ image }: QrCodeProps) {
 
   const pathname = usePathname();
   const url = `https://bio-drop.netlify.app${pathname}`;
+
+  const username = useMemo(() => pathToUsername(pathname), [pathname]);
 
   useEffect(() => {
     if (canvasRef.current === null) return;
@@ -47,7 +50,7 @@ export default function QrCode({ image }: QrCodeProps) {
       .toPng(qrContainerRef.current as HTMLElement)
       .then(function (dataUrl: string) {
         const link = document.createElement("a");
-        link.download = "BioDrop-QR.png";
+        link.download = `${username}-biodrop-qr.png`;
         link.href = dataUrl;
         link.click();
       })
