@@ -1,10 +1,12 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { BsQrCodeScan } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa6";
 import QRCode from "qrcode";
+import domtoimage from "dom-to-image";
 import CopyBtn from "./CopyBtn";
+import Loader from "@/components/Loader/Loader";
 
 type QrCodeProps = {
   image: string;
@@ -13,6 +15,9 @@ type QrCodeProps = {
 export default function QrCode({ image }: QrCodeProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const qrContainerRef = useRef<HTMLDivElement>(null);
+
+  const [downloadLoading, setDownloadLoading] = useState(false);
 
   const pathname = usePathname();
   const url = `https://bio-drop.netlify.app${pathname}`;
@@ -34,10 +39,21 @@ export default function QrCode({ image }: QrCodeProps) {
 
   // download canvas as png
   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.download = "BioDrop-QR.png";
-    link.href = canvasRef.current?.toDataURL() || "";
-    link.click();
+    setDownloadLoading(true);
+    setTimeout(() => {
+      setDownloadLoading(false);
+    }, 2000);
+    domtoimage
+      .toPng(qrContainerRef.current as HTMLElement)
+      .then(function (dataUrl: string) {
+        const link = document.createElement("a");
+        link.download = "BioDrop-QR.png";
+        link.href = dataUrl;
+        link.click();
+      })
+      .catch(function (error: unknown) {
+        console.error("oops, something went wrong!", error);
+      });
   };
 
   // open dialog when clicked
@@ -58,8 +74,11 @@ export default function QrCode({ image }: QrCodeProps) {
       >
         <BsQrCodeScan className="text-3xl" />
       </div>
-      <dialog ref={dialogRef} className=" bg-white rounded-lg p-4">
-        <div className="relative">
+      <dialog
+        ref={dialogRef}
+        className=" backdrop:bg-black/20 backdrop-blur-sm bg-white rounded-lg p-4"
+      >
+        <div ref={qrContainerRef} className="relative">
           <canvas ref={canvasRef}></canvas>
           <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-2 rounded">
             <img
@@ -81,10 +100,15 @@ export default function QrCode({ image }: QrCodeProps) {
               onClick={handleDownload}
               className="text-sm bg-sky-400 rounded px-3 py-1 text-white font-medium outline outline-sky-500 hover:shadow-md  "
             >
-              Download
-              <FaDownload className="inline-block ml-2 text-md " />
+              {downloadLoading ? (
+                <Loader size={20} />
+              ) : (
+                <>
+                  <span className="">Download</span>
+                  <FaDownload className="inline-block ml-2 text-md " />
+                </>
+              )}
             </button>
-
             <CopyBtn label="Copy to clipboard" toBeCopied={url} />
           </span>
         </div>
