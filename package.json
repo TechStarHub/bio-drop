@@ -1,6 +1,6 @@
 {
   "name": "bio-drop",
-  "version": "0.2.18",
+  "version": "0.3.13",
   "private": false,
   "scripts": {
     "dev": "next dev",
