@@ -57,5 +57,24 @@
       "GitHub"
     ],
     "profilePic": "https://avatars.githubusercontent.com/u/1024025?v=4"
+  },
+  {
+    "id": "4",
+    "name": "Imbeshat Aslam",
+    "username": "imbeshat",
+    "headline": "Web Development and Open Source Enthusiast",
+    "location": "Patna, India",
+    "tags": [
+      "JavaScript",
+      "React",
+      "Redux",
+      "TailwindCSS",
+      "Node.js",
+      "MongoDB",
+      "Open Source",
+      "Git",
+      "GitHub"
+    ],
+    "profilePic": "https://avatars.githubusercontent.com/u/48837703?v=4"
   }
 ]

@@ -19,7 +19,7 @@ export default async function People() {
     <section className="container xl:px-20 2xl:px-20 mx-auto px-4 min-h-screen">
       <SearchPeople />
       <p className="mt-2 text-lg font-medium">People ({people.length})</p>
-      <div className="w-full grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-rows mt-2">
+      <div className="w-full grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-rows mt-2 mb-8">
         {people.map((person: any) => (
           <PeopleCard key={person.id} people={person} />
         ))}

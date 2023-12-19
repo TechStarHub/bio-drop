@@ -1,0 +1,40 @@
+{
+    "name": "Imbeshat Aslam",
+    "headline": "Web Development Enthusiast | Software Developer | Technical Writer | Open Source",
+    "profilePic": "https://avatars.githubusercontent.com/u/48837703?v=4",
+    "summary": "Web Development and Open Source Enthusiast.",
+    "location": {
+      "city": "Patna",
+      "country": "India",
+      "countryCode": "IN"
+    },
+    "tags": [
+      "JavaScript",
+      "React",
+      "Redux",
+      "Node.js",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "TailwindCSS",
+      "Git",
+      "GitHub"
+    ],
+    "links": [
+      {
+        "type": "twitter",
+        "url": "https://twitter.com/imbeshat7",
+        "label": "Follow me on Twitter"
+      },
+      {
+        "type": "linkedIn",
+        "url": "https://www.linkedin.com/in/imbeshataslam7/",
+        "label": "Connect with me on LinkedIn"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/imbeshat",
+        "label": "Follow me on Github"
+      }
+    ]
+  }

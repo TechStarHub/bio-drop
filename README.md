@@ -14,11 +14,19 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/TechStarHub/bio-drop?logo=typescript&logoColor=%23ffffff)
 ![GitHub issues](https://img.shields.io/github/issues/TechStarHub/bio-drop?color=%237071E8)
 ![GitHub contributors](https://img.shields.io/github/contributors/TechStarHub/bio-drop?color=%232D9596)
+![GitHub forks](https://img.shields.io/github/forks/TechStarHub/bio-drop?style=social&color=%23FFB534)
 
 </div>
 
+## 👀 View Demo
+
+🛒🚀 Production Build: [https://bio-drop.netlify.app/](https://bio-drop.netlify.app/)
+
+👨‍🏭🚀 Development Build: [https://main--bio-drop.netlify.app/](https://main--bio-drop.netlify.app/)
+
 ## 📌 Table of Contents
 
+- [👀 View Demo](#-view-demo)
 - [📌 Table of Contents](#-table-of-contents)
 - [📝 About](#-about)
 - [🎇 Features](#-features)
@@ -62,8 +70,9 @@ This project is [MIT](./LICENSE) licensed.
 ## 👨‍💻 Contributors
 
 <table>
-  <tr>
-    <td align="center"><a href=""><img src="https://avatars.githubusercontent.com/u/85790967?v=4" width="100px;" alt=""/><br /><sub><b>Bijoy Kar</b></sub></a><br /><a href="" title="Code">💻</a></td>
+    <tr>
+        <td align="center"><a href=""><img src="https://avatars.githubusercontent.com/u/85790967?v=4" width="100px;" alt=""/><br /><sub><b>Bijoy Kar</b></sub></a><br /><a href="" title="Code">💻</a></td>
+        <td align="center"><a href=""><img src="https://avatars.githubusercontent.com/u/48837703?v=4" width="100px;" alt=""/><br /><sub><b>Imbeshat Aslam</b></sub></a><br /><a href="https://github.com/imbeshat" title="Code">💻</a></td>
     </tr>
 </table>
 
