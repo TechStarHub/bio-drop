@@ -19,26 +19,26 @@ export default function License() {
       <div className="mx-auto max-w-[1000px] flex flex-col justify-center items-center">
         <p className="mt-3 text-md text-center w-full">MIT License</p>
         <p className="mt-3 text-md text-center w-full">
-          Permission is hereby granted, free of charge, to any person obtaining
+          {`Permission is hereby granted, free of charge, to any person obtaining
           a copy of this software and associated documentation files (the
           "Software"), to deal in the Software without restriction, including
           without limitation the rights to use, copy, modify, merge, publish,
           distribute, sublicense, and/or sell copies of the Software, and to
           permit persons to whom the Software is furnished to do so, subject to
-          the following conditions:
+          the following conditions:`}
         </p>
         <p className="mt-3 text-md text-center w-full">
           The above copyright notice and this permission notice shall be
           included in all copies or substantial portions of the Software.
         </p>
         <p className="mt-3 text-md text-center w-full">
-          THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+          {`THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
           EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
           MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
           IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
           CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
           TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-          SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+          SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`}
         </p>
       </div>
     </section>

@@ -5,9 +5,9 @@ export default function Privacy() {
     <section className="flex flex-col items-center justify-start min-h-[90vh] p-2 my-10 ">
       <h1 className="text-4xl font-bold -mt-4">BioDrop Privacy Policy</h1>
       <p className="mt-3 text-md text-center w-full sm:w-3/4 lg:max-w-[1000px]">
-        Your privacy is important to us. It is BioDrop's policy to respect your
+        {`Your privacy is important to us. It is BioDrop's policy to respect your
         privacy regarding any information we may collect from you across our
-        website,
+        website,`}
         <Link
           className="text-sky-600 hover:text-sky-700 font-medium"
           href={"https://bio-drop.netlify.app/"}
@@ -53,11 +53,12 @@ export default function Privacy() {
             with third parties.
           </li>
           <li className="mt-3 text-md ">
-            <span className="font-bold">Location:</span> The location is
+            <span className="font-bold">Location:</span>{" "}
+            {`The location is
             optional and is used to show your location on your profile. We don't
             access your device location without your permission, we use the
             location you provide to us. We do not share your location with third
-            parties.
+            parties.`}
           </li>
           <li className="mt-3 text-md ">
             <span className="font-bold">Tags:</span> The tags are optional and
