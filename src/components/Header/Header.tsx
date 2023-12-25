@@ -1,14 +1,13 @@
 import Link from "next/link";
 import NavBar from "./NabBar";
 import { BsGithub } from "react-icons/bs";
+import BrandLogo from "../Brand/BrandLogo";
 
 export default function Header() {
   return (
     <header className="px-6 py-2 flex justify-between items-center h-16 ">
       <Link href="/">
-        <span className="text-2xl font-bold first-letter:text-sky-800">
-          BioDrop
-        </span>
+        <BrandLogo />
       </Link>
       <NavBar />
       <div className="">
