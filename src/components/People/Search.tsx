@@ -1,21 +1,31 @@
 "use client";
-import { useState } from "react";
 
-export default function SearchPeople() {
-  const [search, setSearch] = useState([]);
+import { FormEventHandler } from "react";
 
+type SearchPeopleProps = {
+  search: string;
+  setSearch: (search: string) => void;
+};
+
+export default function SearchPeople({ search, setSearch }: SearchPeopleProps) {
+  const handleSubmit: FormEventHandler<HTMLFormElement> = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const search = formData.get("search") as string;
+    setSearch(search);
+  };
   return (
     <div className="mt-4">
       <h1 className="text-xl md:text-3xl font-bold">People</h1>
-      <form action="" className="mt-4">
+      <form onSubmit={handleSubmit} action="" className="mt-4">
         <input
-          value={search}
-          onInput={(e: any) => {
-            setSearch(e.target.value);
-          }}
           type="search"
+          name="search"
+          id="search"
           className="w-full bg-slate-100 px-4 py-2 rounded border-2"
           placeholder="Search for people by name or username"
+          minLength={3}
+          aria-label="Search for people by name or username"
         />
         <button
           type="submit"
