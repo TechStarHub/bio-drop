@@ -1,6 +1,6 @@
 import { FaLocationDot } from "react-icons/fa6";
-import PeopleLink from "./PeopleLink";
-import QrCode from "./QrCode";
+import PeopleLink from "./Links/PeopleLink";
+import QrCode from "./QrCode/QrCode";
 
 export default function PeopleProfile({ userData }: { userData: any }) {
   const {

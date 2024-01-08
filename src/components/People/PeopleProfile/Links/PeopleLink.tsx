@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CopyBtn from "./CopyBtn";
+import CopyBtn from "../CopyBtn/CopyBtn";
 
 type PeopleLinkProps = {
   label: string;

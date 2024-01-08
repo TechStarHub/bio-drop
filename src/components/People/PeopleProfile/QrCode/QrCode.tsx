@@ -5,7 +5,7 @@ import { BsQrCodeScan } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa6";
 import QRCode from "qrcode";
 import domtoimage from "dom-to-image";
-import CopyBtn from "./CopyBtn";
+import CopyBtn from "../CopyBtn/CopyBtn";
 import Loader from "@/components/Loader/Loader";
 import { pathToUsername } from "@/utils";
 
