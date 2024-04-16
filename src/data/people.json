@@ -76,5 +76,24 @@
       "GitHub"
     ],
     "profilePic": "https://avatars.githubusercontent.com/u/48837703?v=4"
+  },
+  {
+    "id": "5",
+    "name": "Arnab Kundu",
+    "username": "arnabkundu",
+    "headline": "FrontEnd Developer and keen learner ",
+    "location": "Kolkata, India",
+    "tags": [
+      "JavaScript",
+      "React",
+      "TailwindCSS",
+      "Node.js",
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "Python",
+      "Bootstrap"
+    ],
+    "profilePic": "https://media.licdn.com/dms/image/D4D03AQEHd90Ap1nK2A/profile-displayphoto-shrink_800_800/0/1677168232870?e=1718841600&v=beta&t=JysRC016rRPZbMg2iBbUfsXJP9oU_avaGA_lGzclYaM"
   }
 ]
