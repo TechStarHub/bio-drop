@@ -1,0 +1,40 @@
+{
+  "name": "Arnab Kundu",
+  "headline": "Student 👨‍🎓| Full Stack Web Developer 🌐 |JavaScript ⚙️| Tech Enthusiast ✨",
+  "profilePic": "https://media.licdn.com/dms/image/D4D03AQEHd90Ap1nK2A/profile-displayphoto-shrink_800_800/0/1677168232870?e=1718841600&v=beta&t=JysRC016rRPZbMg2iBbUfsXJP9oU_avaGA_lGzclYaM",
+  "summary": "Hi, I'm Arnab Kundu, a Front End Developer adept at transforming designs into interactive and user-friendly websites. With expertise in HTML5, CSS3, and JavaScript, I specialize in crafting captivating digital experiences. Let's connect and discuss how I can elevate your web projects.",
+  "location": {
+    "city": "Kolkata",
+    "country": "India",
+    "countryCode": "IN"
+  },
+  "tags": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "TailwindCSS",
+    "Bootstrap",
+    "C++",
+    "Python"
+  ],
+  "links": [
+    {
+      "type": "twitter",
+      "url": "https://twitter.com/Arnab11576652",
+      "label": "Follow me on Twitter"
+    },
+    {
+      "type": "linkedIn",
+      "url": "https://www.linkedin.com/in/arnab-kundu-763a471b0/",
+      "label": "Connect with me on LinkedIn"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/Arnab0089",
+      "label": "Follow me on Github"
+    }
+  ]
+}
