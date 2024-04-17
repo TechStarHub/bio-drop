@@ -22,44 +22,6 @@
   },
   {
     "id": "2",
-    "name": "John Doe",
-    "username": "johndoe",
-    "headline": "Software Engineer, Tech Lead at ABC Inc.",
-    "location": "Bangalore, India",
-    "tags": [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "GraphQL",
-      "MongoDB",
-      "AWS",
-      "Git",
-      "GitHub"
-    ],
-    "profilePic": "https://avatars.githubusercontent.com/u/1024025?v=4"
-  },
-  {
-    "id": "3",
-    "name": "Hanns Larsen",
-    "username": "hannslarsen",
-    "headline": "Web Developer at XYZ Inc. and Open Source Enthusiast",
-    "location": "New York, USA",
-    "tags": [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "GraphQL",
-      "MongoDB",
-      "AWS",
-      "Docker",
-      "Kubernetes",
-      "Git",
-      "GitHub"
-    ],
-    "profilePic": "https://avatars.githubusercontent.com/u/1024025?v=4"
-  },
-  {
-    "id": "4",
     "name": "Imbeshat Aslam",
     "username": "imbeshat",
     "headline": "Web Development and Open Source Enthusiast",
@@ -78,7 +40,7 @@
     "profilePic": "https://avatars.githubusercontent.com/u/48837703?v=4"
   },
   {
-    "id": "5",
+    "id": "3",
     "name": "Arnab Kundu",
     "username": "arnabkundu",
     "headline": "FrontEnd Developer and keen learner ",
