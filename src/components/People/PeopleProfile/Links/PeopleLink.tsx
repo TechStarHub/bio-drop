@@ -22,6 +22,14 @@ async function IconImporter(type: string) {
       return import("react-icons/fa6").then((module) => module.FaFacebook);
     case "youtube":
       return import("react-icons/fa6").then((module) => module.FaYoutube);
+    case "reddit":
+      return import("react-icons/fa").then((module) => module.FaRedditAlien);
+    case "tiktok":
+      return import("react-icons/fa6").then((module) => module.FaTiktok);
+    case "snapchat":
+      return import("react-icons/fa").then((module) => module.FaSnapchatGhost);
+    case "discord":
+      return import("react-icons/fa6").then((module) => module.FaDiscord);
     default:
       return import("react-icons/fa6").then((module) => module.FaLink);
   }
