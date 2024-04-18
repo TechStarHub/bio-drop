@@ -14,8 +14,10 @@
     "Node.js",
     "HTML",
     "CSS",
-    "Bootstrap",
+    "TailwindCss",
     "Material UI",
+    "Svelte Kit",
+    "Astro",
     "Git",
     "GitHub",
     "C++",
@@ -36,6 +38,11 @@
       "type": "github",
       "url": "https://github.com/iamBijoyKar",
       "label": "Follow me on Github"
+    },
+    {
+      "type": "reddit",
+      "url": "https://www.reddit.com/user/iamBijoyKar/",
+      "label": "Follow me on Reddit"
     }
   ]
 }
