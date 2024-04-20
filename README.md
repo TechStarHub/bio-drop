@@ -73,6 +73,7 @@ This project is [MIT](./LICENSE) licensed.
     <tr>
         <td align="center"><a href=""><img src="https://avatars.githubusercontent.com/u/85790967?v=4" width="100px;" alt=""/><br /><sub><b>Bijoy Kar</b></sub></a><br /><a href="" title="Code">💻</a></td>
         <td align="center"><a href=""><img src="https://avatars.githubusercontent.com/u/48837703?v=4" width="100px;" alt=""/><br /><sub><b>Imbeshat Aslam</b></sub></a><br /><a href="https://github.com/imbeshat" title="Code">💻</a></td>
+        <td align="center"><a href=""><img src="https://media.licdn.com/dms/image/D4D03AQEHd90Ap1nK2A/profile-displayphoto-shrink_800_800/0/1677168232870?e=1718841600&v=beta&t=JysRC016rRPZbMg2iBbUfsXJP9oU_avaGA_lGzclYaM" width="100px;" alt=""/><br /><sub><b>Arnab Kundu</b></sub></a><br /><a href="" title="Code">💻</a></td>
     </tr>
 </table>
 
