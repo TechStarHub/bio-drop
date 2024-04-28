@@ -1,6 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { useRef, useEffect, useState, useMemo } from "react";
+import { useRef, useEffect, useState, useMemo, use } from "react";
 import { BsQrCodeScan } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa6";
 import QRCode from "qrcode";
@@ -64,11 +64,18 @@ export default function QrCode({ image }: QrCodeProps) {
     dialogRef.current?.showModal();
   };
   // close dialog when clicked outside
-  window.document.addEventListener("click", (e) => {
-    if (e.target === dialogRef.current) {
-      dialogRef.current?.close();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.document.addEventListener("click", (e) => {
+        if (e.target === dialogRef.current) {
+          dialogRef.current?.close();
+        }
+      });
+    } else {
+      console.log("window not defined");
     }
-  });
+  }, []);
+
   return (
     <>
       <div
