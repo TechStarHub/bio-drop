@@ -86,7 +86,7 @@ export default function QrCode({ image }: QrCodeProps) {
       </div>
       <dialog
         ref={dialogRef}
-        className=" backdrop:bg-black/20 backdrop-blur-sm bg-white rounded-lg p-4"
+        className=" backdrop:bg-gray-700/30 backdrop-blur-lg bg-white rounded-lg p-4"
       >
         <div ref={qrContainerRef} className="relative">
           <canvas ref={canvasRef}></canvas>
