@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaLink } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import BrandLogo from "../Brand/BrandLogo";
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
       <div className="flex gap-2 justify-between items-center mb-4">
         <div className="sm:w-1/2">
           <Link href="/">
-            <span className="text-2xl font-bold">BioDrop</span>
+            <BrandLogo />
           </Link>
           <p className="text-slate-600 text-sm mt-1 leading-tight tracking-tight">
             A simple, easy-to-use tool to create your own bio link page for

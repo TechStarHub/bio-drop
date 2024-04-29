@@ -1,11 +1,11 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { useRef, useEffect, useState, useMemo } from "react";
+import { useRef, useEffect, useState, useMemo, use } from "react";
 import { BsQrCodeScan } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa6";
 import QRCode from "qrcode";
 import domtoimage from "dom-to-image";
-import CopyBtn from "./CopyBtn";
+import CopyBtn from "../CopyBtn/CopyBtn";
 import Loader from "@/components/Loader/Loader";
 import { pathToUsername } from "@/utils";
 
@@ -64,11 +64,18 @@ export default function QrCode({ image }: QrCodeProps) {
     dialogRef.current?.showModal();
   };
   // close dialog when clicked outside
-  window.document.addEventListener("click", (e) => {
-    if (e.target === dialogRef.current) {
-      dialogRef.current?.close();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.document.addEventListener("click", (e) => {
+        if (e.target === dialogRef.current) {
+          dialogRef.current?.close();
+        }
+      });
+    } else {
+      console.log("window not defined");
     }
-  });
+  }, []);
+
   return (
     <>
       <div
@@ -79,7 +86,7 @@ export default function QrCode({ image }: QrCodeProps) {
       </div>
       <dialog
         ref={dialogRef}
-        className=" backdrop:bg-black/20 backdrop-blur-sm bg-white rounded-lg p-4"
+        className=" backdrop:bg-gray-700/30 backdrop-blur-lg bg-white rounded-lg p-4"
       >
         <div ref={qrContainerRef} className="relative">
           <canvas ref={canvasRef}></canvas>

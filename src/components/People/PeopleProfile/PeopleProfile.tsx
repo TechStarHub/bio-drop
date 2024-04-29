@@ -1,6 +1,7 @@
 import { FaLocationDot } from "react-icons/fa6";
-import PeopleLink from "./PeopleLink";
-import QrCode from "./QrCode";
+import PeopleLink from "./Links/PeopleLink";
+import QrCode from "./QrCode/QrCode";
+import Tag from "./Tags/Tag";
 
 export default function PeopleProfile({ userData }: { userData: any }) {
   const {
@@ -33,12 +34,7 @@ export default function PeopleProfile({ userData }: { userData: any }) {
       </p>
       <div className="flex flex-wrap justify-center gap-2 my-4 md:w-[70%]">
         {tags.map((tag: string, idx: number) => (
-          <span
-            key={idx}
-            className="bg-sky-200 cursor-pointer text-sm text-sky-600 rounded-full px-2 transition-all duration-400 hover:border hover:border-sky-600"
-          >
-            {tag}
-          </span>
+          <Tag key={idx} tag={tag} />
         ))}
       </div>
       <div className="w-full mt-2 mb-8">
