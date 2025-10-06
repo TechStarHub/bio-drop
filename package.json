@@ -3,30 +3,35 @@
   "version": "0.4.31",
   "private": false,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^15.5.4",
     "dom-to-image": "^2.6.0",
-    "next": "14.0.3",
+    "next": "15.5.4",
     "qrcode": "^1.5.3",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
     "react-icons": "^4.12.0"
   },
   "devDependencies": {
     "@types/dom-to-image": "^2.6.7",
     "@types/node": "^20",
     "@types/qrcode": "^1.5.5",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
-    "eslint-config-next": "14.0.3",
+    "eslint-config-next": "15.5.4",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0"
   }
 }
