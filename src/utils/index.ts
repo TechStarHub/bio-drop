@@ -1,3 +1,17 @@
+import {
+  FaTwitter,
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaFacebook,
+  FaYoutube,
+  FaRedditAlien,
+  FaTiktok,
+  FaSnapchat,
+  FaDiscord,
+  FaLink,
+} from "react-icons/fa6";
+
 export function pathToUsername(path: string): string {
   const pathArr = path.split("/");
   const username = pathArr[pathArr.length - 1];
@@ -7,26 +21,26 @@ export function pathToUsername(path: string): string {
 export async function IconImporter(type: string) {
   switch (type) {
     case "twitter":
-      return import("react-icons/fa6").then((module) => module.FaTwitter);
+      return FaTwitter;
     case "github":
-      return import("react-icons/fa6").then((module) => module.FaGithub);
+      return FaGithub;
     case "linkedin":
-      return import("react-icons/fa6").then((module) => module.FaLinkedin);
+      return FaLinkedin;
     case "instagram":
-      return import("react-icons/fa6").then((module) => module.FaInstagram);
+      return FaInstagram;
     case "facebook":
-      return import("react-icons/fa6").then((module) => module.FaFacebook);
+      return FaFacebook;
     case "youtube":
-      return import("react-icons/fa6").then((module) => module.FaYoutube);
+      return FaYoutube;
     case "reddit":
-      return import("react-icons/fa").then((module) => module.FaRedditAlien);
+      return FaRedditAlien;
     case "tiktok":
-      return import("react-icons/fa6").then((module) => module.FaTiktok);
+      return FaTiktok;
     case "snapchat":
-      return import("react-icons/fa").then((module) => module.FaSnapchatGhost);
+      return FaSnapchat;
     case "discord":
-      return import("react-icons/fa6").then((module) => module.FaDiscord);
+      return FaDiscord;
     default:
-      return import("react-icons/fa6").then((module) => module.FaLink);
+      return FaLink;
   }
 }
